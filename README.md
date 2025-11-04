@@ -13,8 +13,8 @@ A React application demonstrating:
 
 ## **Demo**
 
-![App Screenshot](./src/assets/website%20screenshot.jpeg)
-![App Screenshot](./src/assets/WS.jpeg)
+![App Screenshot](./src/Assets/website%20screenshot.jpeg)
+![App Screenshot](./src/Assets/WS.jpeg)
 
 ---
 
