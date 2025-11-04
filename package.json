@@ -20,7 +20,9 @@
   "bugs": {
     "url": "https://github.com/PLP-MERN-Stack-Development/react-js-jsx-and-css-mastering-front-end-development-Flavian6972/issues"
   },
-  "homepage": "https://github.com/PLP-MERN-Stack-Development/react-js-jsx-and-css-mastering-front-end-development-Flavian6972#readme",
+  "homepage":"https://plp-mern-stack-development.github.io/react-js-jsx-and-css-mastering-front-end-development-Flavian6972/"
+
+,
   "dependencies": {
     "@tailwindcss/vite": "^4.1.16",
     "prop-types": "^15.8.1",
