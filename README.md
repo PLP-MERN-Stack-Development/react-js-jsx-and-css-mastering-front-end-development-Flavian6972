@@ -1,47 +1,33 @@
-# React.js and Tailwind CSS Assignment
+# PLP Task Manager
 
-This assignment focuses on building a responsive React application using JSX and Tailwind CSS, implementing component architecture, state management, hooks, and API integration.
+A React application demonstrating:
 
-## Assignment Overview
+- Task management (add, complete, delete, filter)
+- Dark/light theme switcher using Tailwind CSS
+- API data fetching with pagination and search
+- Responsive design for mobile, tablet, and desktop
+- Tailwind utility classes for layout, spacing, typography, and colors
+- Animations and transitions for interactive elements
 
-You will:
-1. Set up a React project with Vite and Tailwind CSS
-2. Create reusable UI components
-3. Implement state management using React hooks
-4. Integrate with external APIs
-5. Style your application using Tailwind CSS
+---
 
-## Getting Started
+## **Demo**
 
-1. Accept the GitHub Classroom assignment invitation
-2. Clone your personal repository that was created by GitHub Classroom
-3. Install dependencies:
-   ```
-   npm install
-   ```
-4. Start the development server:
-   ```
-   npm run dev
-   ```
+![App Screenshot](./src/assets/website%20screenshot.jpeg)
+![App Screenshot](./src/assets/WS.jpeg)
 
-## Files Included
+---
 
-- `Week3-Assignment.md`: Detailed assignment instructions
-- Starter files for your React application:
-  - Basic project structure
-  - Pre-configured Tailwind CSS
-  - Sample component templates
+## **Technologies**
 
-## Requirements
+- React (v18+)
+- Tailwind CSS
+- JavaScript
+- JSONPlaceholder API
 
-- Node.js (v18 or higher)
-- npm or yarn
-- Modern web browser
-- Code editor (VS Code recommended)
+---
 
-## Project Structure
-
-```
+## **Project Structure**
 src/
 ├── components/       # Reusable UI components
 ├── pages/           # Page components
@@ -50,21 +36,72 @@ src/
 ├── api/             # API integration functions
 ├── utils/           # Utility functions
 └── App.jsx          # Main application component
-```
 
-## Submission
+---
 
-Your work will be automatically submitted when you push to your GitHub Classroom repository. Make sure to:
+## **Setup Instructions**
 
-1. Complete all required components and features
-2. Implement proper state management with hooks
-3. Integrate with at least one external API
-4. Style your application with Tailwind CSS
-5. Deploy your application and add the URL to your README.md
+1. **Clone the repo**
+git clone <repo-url>
+cd <repo-folder>
 
-## Resources
+2. **Install dependencies**
 
-- [React Documentation](https://react.dev/)
-- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
-- [Vite Documentation](https://vitejs.dev/guide/)
-- [React Router Documentation](https://reactrouter.com/) 
+npm install
+
+3. **Install Tailwind CSS**
+npm install -D tailwindcss postcss autoprefixer
+npm tailwindcss init -p
+
+4. **Configure Tailwind**
+
+In tailwind.config.js:
+
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"],
+  darkMode: "class", // enables class-based dark mode
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+
+5. **Run the development server**
+npm run dev
+
+
+Open your browser at http://localhost:5173
+ to view the app.
+
+6. **Build for production**
+npm run build
+
+
+This generates an optimized dist/ folder for deployment.
+
+#**Usage**
+
+**Theme Toggle**
+
+Click the toggle in the Navbar to switch between light and dark modes.
+
+The theme affects the entire website.
+
+**Task Manager**
+
+Add tasks using the input box and "Add" button.
+
+Mark tasks as complete/undo with the "Complete/Undo" button.
+
+Delete tasks with the "Delete" button.
+
+Filter tasks using "All", "Active", and "Completed" buttons.
+
+**API Data**
+
+Scroll through fetched data.
+
+Use pagination and search to filter results.
+
+**Deployment URL**
